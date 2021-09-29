@@ -36,7 +36,6 @@ class _MyQuizPage extends StatefulWidget {
 class QuizPageState extends State<_MyQuizPage> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
         appBar: AppBar(title: Text(widget.title), centerTitle: true),
         body: Container(
@@ -98,7 +97,6 @@ class QuizPageState extends State<_MyQuizPage> {
         ),
       ),
     );
-    //TODO retourner le bloc de la question à poser
   }
 
   _getButtonRow() {
