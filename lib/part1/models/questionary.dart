@@ -1,6 +1,8 @@
-import 'package:tp1_part1_dev_mob/part2/question.dart';
+import 'package:flutter/cupertino.dart';
 
-class Questionary {
+import 'question.dart';
+
+class Questionary extends ChangeNotifier {
   List<Question> questions = [
     Question('Some cats are actually allergic to humans', true),
     Question('You can lead a cow down stairs but not up stairs.', false),
@@ -37,6 +39,7 @@ class Questionary {
     } else {
       questionNumber = 0;
     }
+    notifyListeners();
   }
 
   String getQuestionText() {
